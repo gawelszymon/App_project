@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="filename">./logs</Property>
+    </Properties>
+    <Appenders>     <!-- definiuje gdzie dodać, wyświetlić logi, i jak na razie zadklarowałem że dodaje na konsoli-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="file"
+                     fileName="${filename}/app_project.log"
+                     filePattern="${filename}/app_project-%d{HH-mm-ss-SSS}.log">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="500" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>       <!-- tutaj specyfikuje poziom moich logów, co oznacza, że wszystkie logi o levelu trace, lub wyższym będą przekazane do appendera-->
+        <Logger name="app_project_2" level="trace" additivity="false">  <!-- tutaj definuje loga dla konkretnego package, w tym przypadku dla package app_project_2 -->
+            <AppenderRef ref="Console"/>     <!-- jesli additivity ustawione jest na false to logi z danego loggera nie beda przekazywane do roota, czyli wyśiwetlą się tylko na appenderze swojego loggera, jesli parametr -->
+            <AppenderRef ref="file"/>
+        </Logger>
+        <Root level="info">     <!-- w tej sekcji domyślnie definiuje logi bez zróżnicowania na package -->
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="file"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+
+<!-- cała konfiguracja logów definiowana jest w tym pliku -->

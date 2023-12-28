@@ -1,0 +1,8 @@
+15:30:02.498 [main] INFO  app_project_2.HelloApplication1 - app_project_2
+15:30:02.503 [main] ERROR app_project_2.HelloApplication1 - app_project_2
+15:30:02.503 [main] DEBUG app_project_2.HelloApplication1 - app_project_2
+15:30:02.504 [main] FATAL app_project_2.HelloApplication1 - app_project_2
+15:48:46.667 [main] INFO  app_project_2.HelloApplication1 - app_project_2
+15:48:46.669 [main] ERROR app_project_2.HelloApplication1 - app_project_2
+15:48:46.670 [main] DEBUG app_project_2.HelloApplication1 - app_project_2
+15:48:46.670 [main] FATAL app_project_2.HelloApplication1 - app_project_2

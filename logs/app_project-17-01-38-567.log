@@ -1,0 +1,7 @@
+17:00:43.661 [main] INFO  com.example.app_project.HelloApplication - Click succesfull
+17:00:43.673 [main] ERROR com.example.app_project.HelloApplication - DB Conection faled
+17:00:43.673 [main] FATAL com.example.app_project.HelloApplication - This is fatal
+17:01:32.178 [main] INFO  app_project_2.HelloApplication1 - app_project_2
+17:01:32.181 [main] ERROR app_project_2.HelloApplication1 - app_project_2
+17:01:32.182 [main] DEBUG app_project_2.HelloApplication1 - app_project_2
+17:01:32.182 [main] FATAL app_project_2.HelloApplication1 - app_project_2
