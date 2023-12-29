@@ -2,9 +2,6 @@ package com.example.app_project;
 
 import org.apache.logging.log4j.*;
 
-
-
-
 public class HelloApplication {
     private static Logger sample_logger = LogManager.getLogger(HelloApplication.class);
 

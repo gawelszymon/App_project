@@ -1,3 +1,6 @@
 17:01:38.564 [main] INFO  com.example.app_project.HelloApplication - Click succesfull
 17:01:38.570 [main] ERROR com.example.app_project.HelloApplication - DB Conection faled
 17:01:38.571 [main] FATAL com.example.app_project.HelloApplication - This is fatal
+20:16:11.510 [main] INFO  com.example.app_project.HelloApplication - Click succesfull
+20:16:11.514 [main] ERROR com.example.app_project.HelloApplication - DB Conection faled
+20:16:11.514 [main] FATAL com.example.app_project.HelloApplication - This is fatal
