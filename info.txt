@@ -1,0 +1,6 @@
+mój projekt będzie aplikacją dla osoby zainteresowanej ligą NBA
+Na początku będzie okno z wyborem ulubionej drużyny,
+to okno będzie determinowało kolorostyke strony oraz przedstawienie najbliższego meczu,
+będą również widoczne największe legendy takiej drużyny oraz jej pierścienie.
+
+W oknie gównym będzie znajdować się tabela Ligi z jakimiś statystykami wykresami, najlepszymi zawodnikami ligi
