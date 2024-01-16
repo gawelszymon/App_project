@@ -1,0 +1,68 @@
+
+/* Styl dla komórek w tabeli */
+.table-view .table-cell {
+    -fx-padding: 5px; /* Wewnętrzny odstęp komórek */
+    -fx-font-family: 'cursive';
+}
+
+/* Styl dla nieparzystych wierszy */
+.table-row-cell:odd {
+    -fx-background-color: #e0e0e0; /* Kolor tła nieparzystych wierszy */
+}
+
+/* Styl dla parzystych wierszy */
+.table-row-cell:even {
+    -fx-background-color: #d0d0d0; /* Kolor tła parzystych wierszy */
+}
+
+/* Styl dla zaznaczonych wierszy */
+.table-row-cell:selected {
+    -fx-background-color: #3498db; /* Kolor zaznaczonych wierszy */
+    -fx-text-fill: white; /* Kolor tekstu w zaznaczonych wierszach */
+}
+
+/* Styl dla kolumn */
+.table-view .column-header {
+    -fx-background-color: #666; /* Kolor tła kolumny */
+    -fx-text-fill: white; /* Kolor tekstu w kolumnie */
+}
+
+/* Styl dla hiperłączy w komórkach */
+.table-view .hyperlink {
+    -fx-text-fill: #3498db; /* Kolor tekstu hiperłączy */
+    -fx-cursor: hand; /* Kursor podczas najechania na hiperłącze */
+}
+
+/* Zwiększ wysokość wierszy w tabeli */
+.table-row-cell {
+    -fx-min-height: 50px; /* Minimalna wysokość wiersza */
+    -fx-pref-height: 50px; /* Preferowana wysokość wiersza */
+    -fx-max-height: 50px; /* Maksymalna wysokość wiersza */
+}
+
+/* Zwiększ wielkość czcionki w komórkach tabeli */
+.table-cell {
+    -fx-font-size: 18px; /* Ustawienie wielkości czcionki */
+}
+
+.chart-title {
+    -fx-font-size: 25px; /* Rozmiar czcionki dla tytułu wykresu */
+}
+
+.default-color0 {
+    -fx-bar-fill: #3498db; /* Kolor kolumn dla wszystkich serii danych */
+}
+
+.gameDay-label {
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+}
+
+.firstGameName-label {
+    -fx-font-size: 50;
+}
+
+.firstGameData-label {
+    -fx-font-size: 35;
+    -fx-text-fill: #3498db;
+}

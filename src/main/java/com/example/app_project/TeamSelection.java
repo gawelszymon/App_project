@@ -2,6 +2,10 @@ package com.example.app_project;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 public class TeamSelection extends MainAppNBA{
 
     private AnchorPane layout;    //zmienna klasy layout, która jest private, czyli modifikator dostępu,
@@ -61,19 +65,33 @@ public class TeamSelection extends MainAppNBA{
         */
 
         team1Button.setOnAction(event -> {
-            TeamOne teamOne = new TeamOne();
+            if (isInternetAvailableTeamOne()) {
+                app_logger.info("connection succeeded");
 
-            layout.getChildren().clear();
-
-            layout.getChildren().add(teamOne.teamOneContent());
+                TeamOne teamOne = new TeamOne();
+                layout.getChildren().clear();
+                layout.getChildren().add(teamOne.teamOneContent());
+            } else {
+                app_logger.info("connection failed");
+                NoConnectionTeamOne noConnetion = new NoConnectionTeamOne();
+                layout.getChildren().clear();
+                layout.getChildren().add(noConnetion.NoConnectionTeamOneContent());
+            }
         });
 
         team2Button.setOnAction(event -> {
-            TeamTwo teamTwo = new TeamTwo();
+            if (isInternetAvailableTeamTwo()) {
+                app_logger.info("connection succeeded");;
 
-            layout.getChildren().clear();
-
-            layout.getChildren().add(teamTwo.teamTwoContent());
+                TeamTwo teamTwo = new TeamTwo();
+                layout.getChildren().clear();
+                layout.getChildren().add(teamTwo.teamTwoContent());
+            } else {
+                app_logger.info("connection failed");
+                NoConnectionTeamTwo noConnetion = new NoConnectionTeamTwo();
+                layout.getChildren().clear();
+                layout.getChildren().add(noConnetion.NoConnectionTeamTwoContent());
+            }
         });
 
         layout.getChildren().addAll(team1Button, team2Button);
@@ -89,6 +107,24 @@ public class TeamSelection extends MainAppNBA{
 
     public AnchorPane getLayout() {
         return layout;
+    }
+
+    public static boolean isInternetAvailableTeamOne() {
+        try {
+            InetAddress address = InetAddress.getByName("www.google.com");
+            return !address.equals("");
+        } catch (UnknownHostException e) {
+            return false;
+        }
+    }
+
+    public static boolean isInternetAvailableTeamTwo() {
+        try {
+            InetAddress address = InetAddress.getByName("www.youtube.com");
+            return !address.equals("");
+        } catch (UnknownHostException e) {
+            return false;
+        }
     }
 }
 

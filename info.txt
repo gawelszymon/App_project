@@ -4,3 +4,21 @@ to okno będzie determinowało kolorostyke strony oraz przedstawienie najbliższ
 będą również widoczne największe legendy takiej drużyny oraz jej pierścienie.
 
 W oknie gównym będzie znajdować się tabela Ligi z jakimiś statystykami wykresami, najlepszymi zawodnikami ligi
+
+
+Plan na 10.01
+przede wszystkim ogarnąć tabele w css, poza tym ogarnąć,
+aby strona się sama aktualizowała
+i oprócz tego dodać jakieś ciekawe wykresy, czy coś z tymi zdjęciami nba wykombinować
+i jeszcze logi
+
+
+Boston
+Chihago
+Philadelphia
+Detroid
+
+
+<img class="featured-games-widget_competitor_logo__u-5dG" width="164" height="164" alt="" title=""
+data-src=
+"https://imagecache.365scores.com/image/upload/f_png,w_82,h_82,c_limit,q_auto:eco,dpr_2,d_Competitors:default1.png/v2/Competitors/1322" decoding="async" style="max-width: 82px; max-height: 82px; width: auto; height: auto; visibility: visible;" src="https://imagecache.365scores.com/image/upload/f_png,w_82,h_82,c_limit,q_auto:eco,dpr_2,d_Competitors:default1.png/v2/Competitors/1322">
