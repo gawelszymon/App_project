@@ -1,0 +1,73 @@
+
+* {
+    -fx-font-family: 'Chakra Petch', sans-serif;
+}
+
+.noConInfo-label {
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+}
+
+.tryAgainInfo-label {
+    -fx-font-size: 25;
+}
+
+
+.team1-button {
+    -fx-text-fill: #ffffff; /* Biały kolor tekstu */
+    -fx-font-size: 14px; /* Rozmiar czcionki */
+    -fx-background-radius: 0;
+    -fx-background-image: url('LAphoto.png'); /* Ścieżka do obrazu */
+    -fx-background-size: cover;
+}
+
+.team2-button {
+    -fx-text-fill: #ffffff; /* Biały kolor tekstu */
+    -fx-font-size: 14px; /* Rozmiar czcionki */
+    -fx-background-radius: 0;
+    -fx-background-image: url('SAphoto.png'); /* Ścieżka do obrazu */
+    -fx-background-size: cover;
+}
+
+.reloadButton-style {
+    -fx-background-image: url('reload.png');
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-min-width: 100px; /* Minimalna szerokość przycisku */
+    -fx-min-height: 100px; /* Minimalna wysokość przycisku */
+    -fx-max-width: 100px; /* Maksymalna szerokość przycisku */
+    -fx-max-height: 100px; /* Maksymalna wysokość przycisku */
+}
+
+.backButton-style {
+    -fx-background-image: url('reload.png');
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-min-width: 30px; /* Minimalna szerokość przycisku */
+    -fx-min-height: 30px; /* Minimalna wysokość przycisku */
+    -fx-max-width: 30px; /* Maksymalna szerokość przycisku */
+    -fx-max-height: 30px; /* Maksymalna wysokość przycisku */
+}
+
+.team1-button:hover {
+    -fx-opacity: 0.82; /* Wartość opacity po najechaniu myszką */
+}
+
+.team2-button:hover {
+    -fx-opacity: 0.82; /* Wartość opacity po najechaniu myszką */
+}
+
+.reloadButton-style:hover {
+    -fx-opacity: 0.75;
+    -fx-rotate: 180;
+}
+
+.backButton-style:hover {
+    -fx-opacity: 0.75;
+    -fx-scale-x: 1.25;
+    -fx-scale-y: 1.25;
+    -fx-rotate: 180;
+}
+
+
+
